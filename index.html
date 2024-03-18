@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width-device-width" initial-scale="1.0">
+    <title>Space Shooter</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+      }
+      video{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+      .level-back{
+        display: flex;
+        border: 2px solid #000;
+        padding: 15px;;
+      }
+      .head{
+        background: #fff;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        font-family: Monospace;
+        text-align: center;
+      }
+      .head h2{
+        font-size: 16px;
+        cursor: default;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .levels{
+        background: grey;
+        padding: 25px;
+        display: flex;
+        flex-direction: inline;
+        transition: 0.5s;
+      }
+      .levels:hover{
+        background: lightgrey;
+        transform: scale(1.5);
+      }
+      .levels img{
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="backcanvas.mp4" type="video/mp4">
+    </video>
+    <div class="head">
+      <h2>Select a Stage</h2>
+    </div>
+    <div class="level-back">
+      <div class="levels"><a href="spacealpha.html">
+        <h3>Alpha</h3>
+        <img src="spacealpha.png">
+        </a>
+      </div>
+      <div class="levels"><a href="bettle.html">
+        <h3>Bettle</h3>
+        <img src="bettle.png">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
